@@ -1,0 +1,160 @@
+﻿<Window x:Class="Calculator_new_one.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator_new_one"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="500">
+    <Grid>
+
+       
+        
+
+
+        
+        
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+
+
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="4" >
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+
+
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0" Grid.Column="0" Content="%" FontSize="40" Click="Percent_Button"
+                    Background="Gray"> </Button>
+            <Button Grid.Row="0" Grid.Column="1" Content="CE" FontSize="40" Click="Button_Click"> </Button>
+            <Button Grid.Row="0" Grid.Column="2" Content="C" FontSize="40" Click="Clear_Button"
+                    Background="Gray"></Button>
+            <Button Grid.Row="0" Grid.Column="3" Content="x" FontSize="40" Click="Button_Click"></Button>
+
+            <Button Grid.Row="1" Grid.Column="0" Content="1/x" FontSize="40" Click="Button_Click"></Button>
+            <Button Grid.Row="1" Grid.Column="1" Content="^"   FontSize="40" Click="Double_Button"
+                    Background="Gray"></Button>
+            <Button Grid.Row="1" Grid.Column="2" Content="x/x" FontSize="40" Click="Button_Click"></Button>
+            <Button Grid.Row="1" Grid.Column="3" Content="/" FontSize="40" Click="DivideButton_Click"
+                    Background="Gray"></Button>
+
+            <Button Grid.Row="2" Grid.Column="0" Content="7" FontSize="40" Click="Button_Click"></Button>
+            <Button Grid.Row="2" Grid.Column="1" Content="8" FontSize="40" Click="Button_Click"></Button>
+            <Button Grid.Row="2" Grid.Column="2" Content="9" FontSize="40" Click="Button_Click"></Button>
+            <Button Grid.Row="2" Grid.Column="3" Content="x" FontSize="40" Click="MultipleButton_Click"
+                    Background="Gray"></Button>
+
+            <Button Grid.Row="3" Grid.Column="0" Content="4" FontSize="40" Click="Button_Click"></Button>
+            <Button Grid.Row="3" Grid.Column="1" Content="5" FontSize="40" Click="Button_Click"></Button>
+            <Button Grid.Row="3" Grid.Column="2" Content="6" FontSize="40" Click="Button_Click"></Button>
+            <Button Grid.Row="3" Grid.Column="3" Content="-" FontSize="40" Click="SubButton_Click"
+                    Background="Gray"></Button>
+
+            <Button Grid.Row="4" Grid.Column="0" Content="1" FontSize="40" Click="Button_Click"></Button>
+            <Button Grid.Row="4" Grid.Column="1" Content="2" FontSize="40" Click="Button_Click"></Button>
+            <Button Grid.Row="4" Grid.Column="2" Content="3" FontSize="40" Click="Button_Click"></Button>
+            <Button Grid.Row="4" Grid.Column="3" Content="+" FontSize="40" Click="AddButton_Click"
+                    Background="Gray"></Button>
+
+            <Button Grid.Row="5" Grid.Column="0" Content="+/-" FontSize="40" Click="Button_Click"></Button>
+            <Button Grid.Row="5" Grid.Column="1" Content="0" FontSize="40" Click="Button_Click"></Button>
+            <Button Grid.Row="5" Grid.Column="2" Content="." FontSize="40" Click="Button_Click"></Button>
+            <Button Grid.Row="5" Grid.Column="3" Content="=" FontSize="40" Click="Equals_Click" 
+                    Background="Gray"></Button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </Grid>
+
+        <Border >
+            <Image Source="icons\calculator.png" 
+            Grid.Row="0" HorizontalAlignment="Left" Width="20"  
+                 
+            
+            ></Image>
+        </Border>
+
+
+        <Grid Grid.Row="0" Grid.Column="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+            
+            
+            
+
+        <Border Grid.Row="0" Grid.Column="0" >
+
+            <Label Content="Calculator"  HorizontalAlignment="Center" FontSize="18"
+                   FontStyle="Italic" ></Label>
+            
+        </Border>
+
+            <Border Grid.Row="2" Grid.Column="1">
+
+                <Image Source="icons\navigation.png"
+                       Grid.Row="1" Grid.Column="1"></Image>
+                
+                
+                
+            </Border>
+
+            
+            
+                
+                
+        </Grid>
+
+            <Border Grid.Row="2">
+
+                <TextBox Name="board" FontSize="60" HorizontalContentAlignment="Right"
+                       Grid.Row="1"  Background="Aqua" Width="400"
+                       ></TextBox>
+                
+                
+                
+            </Border>
+
+        
+        
+
+    </Grid>
+</Window>
